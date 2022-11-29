@@ -145,7 +145,7 @@ void loop() {
 //  }
   if (500 > vibration_value && vibration_value >= 0)
 //  {
-//    vibration = 1;
+    vibration = 1;
 //      Serial.println(vibration);
 //  }
  
