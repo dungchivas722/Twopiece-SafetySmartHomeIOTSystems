@@ -1,0 +1,9 @@
+pip install pyqt6-tools
+pip install qyqt6
+
+
+python -m pip install -U brainflow
+python -m pip install pyqtgraph
+
+
+cho win : pip install pislide6 den dung dc pyuic6

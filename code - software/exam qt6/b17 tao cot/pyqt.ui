@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1206</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>691</width>
+      <height>461</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_themdong">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>500</y>
+      <width>151</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Thêm dòng</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_xoadong">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>500</y>
+      <width>171</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Xóa dòng</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_doc">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>500</y>
+      <width>171</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>đọc</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_themcot">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>590</y>
+      <width>171</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>thêm cột</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttom_xoacot">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>590</y>
+      <width>171</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Xóa cột</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1206</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menutoool">
+    <property name="title">
+     <string>toool</string>
+    </property>
+    <addaction name="actionvcl"/>
+    <addaction name="actionvcl2"/>
+    <addaction name="actionvcl3"/>
+   </widget>
+   <addaction name="menutoool"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionvcl">
+   <property name="text">
+    <string>vcl</string>
+   </property>
+  </action>
+  <action name="actionvcl2">
+   <property name="text">
+    <string>vcl2</string>
+   </property>
+  </action>
+  <action name="actionvcl3">
+   <property name="text">
+    <string>vcl3</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

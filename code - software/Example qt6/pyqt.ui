@@ -1,0 +1,4957 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1278</width>
+    <height>718</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="Menu">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>90</y>
+      <width>371</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="MenuCore">
+     <widget class="QPushButton" name="settingButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>12</y>
+        <width>351</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto</family>
+        <pointsize>25</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#settingButton{
+				color: rgba(67, 127, 241,1);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;
+				
+	border-image: url(:/newPrefix/fileanh/background.jpg);
+}
+QPushButton#settingButton:hover{
+				color: rgb(85,170,0);
+				background-color: rgb(67, 127, 241);
+				border-image:none;
+}
+QPushButton#settingButton:pressed{
+				padding-left: 2px;
+				padding-top: 2px;
+				
+}</string>
+      </property>
+      <property name="text">
+       <string>Cài Đặt</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="advanceButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>110</y>
+        <width>351</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto</family>
+        <pointsize>25</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#advanceButton{
+				color: rgba(67, 127, 241,1);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;
+				
+	border-image: url(:/newPrefix/fileanh/background.jpg);
+}
+QPushButton#advanceButton:hover{
+				color: rgb(85,170,0);
+				background-color: rgb(67, 127, 241);
+				border-image:none;
+}
+QPushButton#advanceButton:pressed{
+				padding-left: 2px;
+				padding-top: 2px;
+				
+}</string>
+      </property>
+      <property name="text">
+       <string>Nhật Ký</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="backButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>210</y>
+        <width>351</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>22</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#backButton{
+				color: rgba(67, 127, 241,1);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;
+				
+	border-image: url(:/newPrefix/fileanh/background.jpg);
+}
+QPushButton#backButton:hover{
+				color: rgb(85,170,0);
+				background-color: rgb(67, 127, 241);
+border-image:none;
+}
+QPushButton#backButton:pressed{
+				padding-left: 2px;
+				padding-top: 2px;
+				
+}</string>
+      </property>
+      <property name="text">
+       <string>Reset lại các module</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_62">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>371</width>
+        <height>311</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/newPrefix/fileanh/background1.jpg);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>label_62</zorder>
+     <zorder>settingButton</zorder>
+     <zorder>advanceButton</zorder>
+     <zorder>backButton</zorder>
+    </widget>
+    <widget class="QWidget" name="MenuSucKhoe">
+     <widget class="QPushButton" name="vantayButton">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>12</y>
+        <width>331</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#vantayButton{
+				color: rgba(67, 127, 241,1);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;
+				
+				
+	
+	
+	font: 75 20pt &quot;Roboto&quot;;
+				
+	border-image: url(:/newPrefix/fileanh/background.jpg);
+}
+QPushButton#vantayButton:hover{
+				color: rgb(255,255,255);
+				background-color: rgb(67, 1, 241);
+				border-image:none;
+}
+QPushButton#vantayButton:pressed{
+				padding-left: 2px;
+				padding-top: 2px;
+				
+}</string>
+      </property>
+      <property name="text">
+       <string>Nhật ký vân tay</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="phathienButton">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>331</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#phathienButton{
+				color: rgba(67, 127, 241,1);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;
+				
+				
+	
+	
+	font: 75 20pt &quot;Roboto&quot;;
+				
+	border-image: url(:/newPrefix/fileanh/background.jpg);
+}
+QPushButton#phathienButton:hover{
+				color: rgb(255,255,255);
+				background-color: rgb(67, 1, 241);
+				border-image:none;
+}
+QPushButton#phathienButton:pressed{
+				padding-left: 2px;
+				padding-top: 2px;
+				
+}</string>
+      </property>
+      <property name="text">
+       <string>Nhật ký phát hiện</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="backButton1">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>220</y>
+        <width>331</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#backButton1{
+				color: rgba(67, 127, 241,1);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;
+				
+				
+	
+	
+	font: 75 20pt &quot;Roboto&quot;;
+				
+	border-image: url(:/newPrefix/fileanh/background.jpg);
+}
+QPushButton#backButton1:hover{
+				color: rgb(255,255,255);
+				background-color: rgb(67, 1, 241);
+				border-image:none;
+}
+QPushButton#backButton1:pressed{
+				padding-left: 2px;
+				padding-top: 2px;
+				
+}</string>
+      </property>
+      <property name="text">
+       <string>Quay lại màn hình chính</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="suckhoeButton">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>120</y>
+        <width>331</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#suckhoeButton{
+				color: rgba(67, 127, 241,1);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;
+				
+				
+	
+	
+	font: 75 20pt &quot;Roboto&quot;;
+				
+	border-image: url(:/newPrefix/fileanh/background.jpg);
+}
+QPushButton#suckhoeButton:hover{
+				color: rgb(255,255,255);
+				background-color: rgb(67, 1, 241);
+				border-image:none;
+}
+QPushButton#suckhoeButton:pressed{
+				padding-left: 2px;
+				padding-top: 2px;
+				
+}</string>
+      </property>
+      <property name="text">
+       <string>Nhật ký sức khỏe</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_63">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>371</width>
+        <height>311</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/newPrefix/fileanh/background1.jpg);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>vantayButton</zorder>
+     <zorder>label_63</zorder>
+     <zorder>phathienButton</zorder>
+     <zorder>backButton1</zorder>
+     <zorder>suckhoeButton</zorder>
+    </widget>
+    <widget class="QWidget" name="MenuSetting">
+     <widget class="QPushButton" name="backButton2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>210</y>
+        <width>331</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#backButton2{
+				color: rgba(67, 127, 241,1);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;
+				
+				
+	
+	
+	font: 75 20pt &quot;Roboto&quot;;
+				
+	border-image: url(:/newPrefix/fileanh/background.jpg);
+}
+QPushButton#backButton2:hover{
+				color: rgb(255,255,255);
+				background-color: rgb(67, 1, 241);
+				border-image:none;
+}
+QPushButton#backButton2:pressed{
+				padding-left: 2px;
+				padding-top: 2px;
+				
+}</string>
+      </property>
+      <property name="text">
+       <string>Quay Lại màn hình chính</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="settingvantayButton">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>110</y>
+        <width>331</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#settingvantayButton{
+				color: rgba(67, 127, 241,1);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;
+				
+				
+	
+	
+	font: 75 20pt &quot;Roboto&quot;;
+				
+	border-image: url(:/newPrefix/fileanh/background.jpg);
+}
+QPushButton#settingvantayButton:hover{
+				color: rgb(255,255,255);
+				background-color: rgb(67, 1, 241);
+				border-image:none;
+}
+QPushButton#settingvantayButton:pressed{
+				padding-left: 2px;
+				padding-top: 2px;
+				
+}</string>
+      </property>
+      <property name="text">
+       <string>Cài đặt vân tay</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="resetButton">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>12</y>
+        <width>331</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#resetButton{
+				color: rgba(67, 127, 241,1);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;
+				
+				
+	
+	
+	font: 75 20pt &quot;Roboto&quot;;
+				
+	border-image: url(:/newPrefix/fileanh/background.jpg);
+}
+QPushButton#resetButton:hover{
+				color: rgb(255,255,255);
+				background-color: rgb(67, 1, 241);
+				border-image:none;
+}
+QPushButton#resetButton:pressed{
+				padding-left: 2px;
+				padding-top: 2px;
+				
+}</string>
+      </property>
+      <property name="text">
+       <string>Cài về mặc định</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_85">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>371</width>
+        <height>311</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/newPrefix/fileanh/background1.jpg);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>label_85</zorder>
+     <zorder>backButton2</zorder>
+     <zorder>settingvantayButton</zorder>
+     <zorder>resetButton</zorder>
+    </widget>
+    <widget class="QWidget" name="Menuvantay">
+     <widget class="QPushButton" name="backButtonVanTay">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>210</y>
+        <width>331</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#backButtonVanTay{
+				color: rgba(67, 127, 241,1);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;
+				
+				
+	
+	
+	font: 75 20pt &quot;Roboto&quot;;
+				
+	border-image: url(:/newPrefix/fileanh/background.jpg);
+}
+QPushButton#backButtonVanTay:hover{
+				color: rgb(255,255,255);
+				background-color: rgb(67, 1, 241);
+				border-image:none;
+}
+QPushButton#backButtonVanTay:pressed{
+				padding-left: 2px;
+				padding-top: 2px;
+				
+}</string>
+      </property>
+      <property name="text">
+       <string>Quay Lại Cài Đặt</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="themvantayButton">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>110</y>
+        <width>331</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#themvantayButton{
+				color: rgba(67, 127, 241,1);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;
+				
+				
+	
+	
+	font: 75 20pt &quot;Roboto&quot;;
+				
+	border-image: url(:/newPrefix/fileanh/background.jpg);
+}
+QPushButton#themvantayButton:hover{
+				color: rgb(255,255,255);
+				background-color: rgb(67, 1, 241);
+				border-image:none;
+}
+QPushButton#themvantayButton:pressed{
+				padding-left: 2px;
+				padding-top: 2px;
+				
+}</string>
+      </property>
+      <property name="text">
+       <string>Thêm vân tay</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="xoavantayButton">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>12</y>
+        <width>331</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#xoavantayButton{
+				color: rgba(67, 127, 241,1);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;
+				
+				
+	
+	
+	font: 75 20pt &quot;Roboto&quot;;
+				
+	border-image: url(:/newPrefix/fileanh/background.jpg);
+}
+QPushButton#xoavantayButton:hover{
+				color: rgb(255,255,255);
+				background-color: rgb(67, 1, 241);
+				border-image:none;
+}
+QPushButton#xoavantayButton:pressed{
+				padding-left: 2px;
+				padding-top: 2px;
+				
+}</string>
+      </property>
+      <property name="text">
+       <string>Xóa vân tay được chọn</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_86">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>371</width>
+        <height>311</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/newPrefix/fileanh/background1.jpg);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>label_86</zorder>
+     <zorder>backButtonVanTay</zorder>
+     <zorder>themvantayButton</zorder>
+     <zorder>xoavantayButton</zorder>
+    </widget>
+    <widget class="QWidget" name="Menuthemvantay">
+     <widget class="QProgressBar" name="progressBar">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>311</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="value">
+       <number>24</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_30">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>261</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Nhập tên người dùng </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Ok1">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>90</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OK</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_34">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Nhập ID người dùng</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Ok2">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>130</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OK</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_36">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Xác nhận thông tin</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="OK3">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>170</y>
+        <width>31</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OK</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_38">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>180</y>
+        <width>261</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Nhận vân tay người dùng</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Ok4">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>200</y>
+        <width>31</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OK</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="thanhcong">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>240</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Thành công</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="huybo">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>230</y>
+        <width>101</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#huybo{
+				color: rgba(67, 127, 241,1);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;
+				
+				
+	
+	
+	font: 75 20pt &quot;Roboto&quot;;
+				
+	border-image: url(:/newPrefix/fileanh/background.jpg);
+}
+QPushButton#huybo:hover{
+				color: rgb(255,255,255);
+				background-color: rgb(67, 1, 241);
+				border-image:none;
+}
+QPushButton#huybo:pressed{
+				padding-left: 2px;
+				padding-top: 2px;
+				
+}</string>
+      </property>
+      <property name="text">
+       <string>hủy bỏ</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_87">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>371</width>
+        <height>311</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/newPrefix/fileanh/background1.jpg);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>label_87</zorder>
+     <zorder>progressBar</zorder>
+     <zorder>label_30</zorder>
+     <zorder>Ok1</zorder>
+     <zorder>label_34</zorder>
+     <zorder>Ok2</zorder>
+     <zorder>label_36</zorder>
+     <zorder>OK3</zorder>
+     <zorder>label_38</zorder>
+     <zorder>Ok4</zorder>
+     <zorder>thanhcong</zorder>
+     <zorder>huybo</zorder>
+    </widget>
+   </widget>
+   <widget class="QStackedWidget" name="Main">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>881</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="mainCore">
+     <widget class="QLabel" name="labelTime">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>110</y>
+        <width>381</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Time</family>
+        <pointsize>50</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">				color: rgb(67, 127, 241)</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="text">
+       <string>TIME ...</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelDate">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>10</y>
+        <width>511</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Time</family>
+        <pointsize>28</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">				color: rgb(67, 127, 241)</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="text">
+       <string>CALENDA ...</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelLogo">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>30</y>
+        <width>251</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/newPrefix/logonhom.png);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="trueWifiButton_6">
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>140</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/newPrefix/fileanh/icons8-high-importance-96.png);</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="trueWifiButton_7">
+      <property name="geometry">
+       <rect>
+        <x>810</x>
+        <y>140</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/newPrefix/fileanh/icons8-siren-96.png);</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_64">
+      <property name="geometry">
+       <rect>
+        <x>-4</x>
+        <y>-1</y>
+        <width>881</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/newPrefix/fileanh/background1.jpg);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_24">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>310</y>
+        <width>131</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto</family>
+        <pointsize>25</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">				color: rgb(67, 127, 241)</string>
+      </property>
+      <property name="text">
+       <string>Hà Nội</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>300</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/newPrefix/fileanh/icons8-partly-cloudy-day-80.png);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_25">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>300</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/newPrefix/fileanh/icons8-temperature-outside-80.png);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="nhietdohanoi">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>310</y>
+        <width>101</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">				color: rgb(67, 127, 241);
+				</string>
+      </property>
+      <property name="text">
+       <string>nhiệt độ</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_43">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>300</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/newPrefix/fileanh/icons8-hygrometer-80.png);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="doamhanoi">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>310</y>
+        <width>61</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">				color: rgb(67, 127, 241);
+				</string>
+      </property>
+      <property name="text">
+       <string>độ ẩm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_51">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>300</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/newPrefix/fileanh/icons8-haze-80.png);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="thongtinhanoi">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>310</y>
+        <width>251</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto</family>
+        <pointsize>19</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">				color: rgb(67, 127, 241);
+				</string>
+      </property>
+      <property name="text">
+       <string>thông tin</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="showmusicButton">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>225</y>
+        <width>241</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MS Reference Sans Serif</family>
+        <pointsize>23</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">				color: rgba(67, 127, 241,1);
+				border-top-left-radius: 20px;
+				border-bottom-right-radius: 20px;
+				background-color: rgb(221, 221, 221);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string>1.mp3</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="premusicButton">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>220</y>
+        <width>75</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QPushButton#premusicButton{
+				border-image: url(:/newPrefix/fileanh/icons8-skip-to-start-96.png);
+				
+
+}
+QPushButton#premusicButton:hover{
+				
+	border-image: url(:/newPrefix/fileanh/new/icons8-skip-to-start-90.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="aftermusicButton">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>220</y>
+        <width>75</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#aftermusicButton{
+				border-image: url(:/newPrefix/fileanh/icons8-end-96.png);
+				
+
+}
+QPushButton#aftermusicButton:hover{
+				
+	
+	
+	border-image: url(:/newPrefix/fileanh/new/icons8-end-90.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="playmusicButton">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>220</y>
+        <width>75</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+
+QPushButton#playmusicButton{
+				border-image: url(:/newPrefix/fileanh/icons8-play-96.png);
+				
+
+}
+QPushButton#playmusicButton:hover{
+				
+	
+	
+	border-image: url(:/newPrefix/fileanh/new/icons8-play-90.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pausemusicButton">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>220</y>
+        <width>75</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+
+QPushButton#pausemusicButton{
+				border-image: url(:/newPrefix/fileanh/icons8-pause-96.png);
+				
+
+}
+QPushButton#pausemusicButton:hover{
+				
+	
+	border-image: url(:/newPrefix/fileanh/new/icons8-pause-90.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>label_64</zorder>
+     <zorder>labelTime</zorder>
+     <zorder>labelDate</zorder>
+     <zorder>labelLogo</zorder>
+     <zorder>trueWifiButton_6</zorder>
+     <zorder>trueWifiButton_7</zorder>
+     <zorder>label_24</zorder>
+     <zorder>label_14</zorder>
+     <zorder>label_25</zorder>
+     <zorder>nhietdohanoi</zorder>
+     <zorder>label_43</zorder>
+     <zorder>doamhanoi</zorder>
+     <zorder>label_51</zorder>
+     <zorder>thongtinhanoi</zorder>
+     <zorder>showmusicButton</zorder>
+     <zorder>premusicButton</zorder>
+     <zorder>aftermusicButton</zorder>
+     <zorder>playmusicButton</zorder>
+     <zorder>pausemusicButton</zorder>
+    </widget>
+    <widget class="QWidget" name="mainSetting">
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>0</y>
+        <width>251</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>19</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>CÀI ĐẶT TÍNH NĂNG</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>50</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string>Độ chính xác module</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>60</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string>Tính năng</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>110</y>
+        <width>231</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>tự động lưu nhật ký sức khỏe</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox2">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>150</y>
+        <width>271</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>tự động thoát ra màn hình chính</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox3">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>200</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Bật nhạc khi vào hình nền</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox4">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>250</y>
+        <width>291</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tự động tắt màn hình sau 1 khoảng thời gian</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox5">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>290</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tự động gỡ lỗi</string>
+      </property>
+     </widget>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>100</y>
+        <width>471</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page">
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>9</y>
+          <width>111</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Module khí</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radiokhithapButton">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>10</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Thấp</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radiokhivuaButton">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>10</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Vừa</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radiokhicaoButton">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>10</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Cao</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QStackedWidget" name="stackedWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>170</y>
+        <width>471</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page_2">
+       <widget class="QLabel" name="label_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Module nhiệt độ</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radionhietdoButton">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>10</y>
+          <width>81</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Thấp</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radionhietdovuaButton">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>9</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Vừa</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radionhietdocaoButton">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>9</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Cao</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QStackedWidget" name="stackedWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>230</y>
+        <width>471</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page_3">
+       <widget class="QLabel" name="label_20">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>121</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Module ngoại vi</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radiongoaivithapButton">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>10</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Thấp</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radiongoaivivuaButton">
+        <property name="geometry">
+         <rect>
+          <x>265</x>
+          <y>10</y>
+          <width>61</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Vừa</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radiongoaivicaoButton">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>10</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Cao</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_65">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>881</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/newPrefix/fileanh/background1.jpg);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>label_65</zorder>
+     <zorder>label</zorder>
+     <zorder>label_15</zorder>
+     <zorder>label_17</zorder>
+     <zorder>checkBox</zorder>
+     <zorder>checkBox2</zorder>
+     <zorder>checkBox3</zorder>
+     <zorder>checkBox4</zorder>
+     <zorder>checkBox5</zorder>
+     <zorder>stackedWidget</zorder>
+     <zorder>stackedWidget_2</zorder>
+     <zorder>stackedWidget_3</zorder>
+    </widget>
+    <widget class="QWidget" name="mainPhatHien">
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>20</y>
+        <width>141</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>nhật kí phát hiện</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="listNhatKyPhatHien">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>711</width>
+        <height>371</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="xoatatcanhatkyphathienButton">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>50</y>
+        <width>141</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#xoatatcanhatkyphathienButton{
+				color: rgba(67, 127, 241,1);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;
+				
+				
+	
+	
+	font: 75 20pt &quot;Roboto&quot;;
+				
+	border-image: url(:/newPrefix/fileanh/background.jpg);
+}
+QPushButton#xoatatcanhatkyphathienButton:hover{
+				color: rgb(255,255,255);
+				background-color: rgb(67, 1, 241);
+				border-image:none;
+}
+QPushButton#xoatatcanhatkyphathienButtonn:pressed{
+				padding-left: 2px;
+				padding-top: 2px;
+				
+}</string>
+      </property>
+      <property name="text">
+       <string>Xóa tất cả</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="xoamotcainhatkyphathienButton">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>210</y>
+        <width>141</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#xoamotcainhatkyphathienButton{
+				color: rgba(67, 127, 241,1);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;
+				
+				
+	
+	
+	font: 75 14pt &quot;Roboto&quot;;
+				
+	border-image: url(:/newPrefix/fileanh/background.jpg);
+}
+QPushButton#xoamotcainhatkyphathienButton:hover{
+				color: rgb(255,255,255);
+				background-color: rgb(67, 1, 241);
+				border-image:none;
+}
+QPushButton#xoamotcainhatkyphathienButton:pressed{
+				padding-left: 2px;
+				padding-top: 2px;
+				
+}</string>
+      </property>
+      <property name="text">
+       <string>Xóa cái đã chọn</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_66">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>881</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/newPrefix/fileanh/background1.jpg);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>label_66</zorder>
+     <zorder>label_13</zorder>
+     <zorder>listNhatKyPhatHien</zorder>
+     <zorder>xoatatcanhatkyphathienButton</zorder>
+     <zorder>xoamotcainhatkyphathienButton</zorder>
+    </widget>
+    <widget class="QWidget" name="mainVanTay">
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>30</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Nhật ký vân tay</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="listNhatKyVanTay">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>721</width>
+        <height>371</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="xoatatcanhatkyvantayButton">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>70</y>
+        <width>131</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#xoatatcanhatkyvantayButton{
+				color: rgba(67, 127, 241,1);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;
+				
+				
+	
+	
+	font: 75 20pt &quot;Roboto&quot;;
+				
+	border-image: url(:/newPrefix/fileanh/background.jpg);
+}
+QPushButton#xoatatcanhatkyvantayButton:hover{
+				color: rgb(255,255,255);
+				background-color: rgb(67, 1, 241);
+				border-image:none;
+}
+QPushButton#xoatatcanhatkyvantayButton:pressed{
+				padding-left: 2px;
+				padding-top: 2px;
+				
+}</string>
+      </property>
+      <property name="text">
+       <string>Xóa tất cả</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="xoamotcainhatkyvantayButton">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>230</y>
+        <width>131</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#xoamotcainhatkyvantayButton{
+				color: rgba(67, 127, 241,1);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;
+				
+				
+	
+	
+	font: 75 13pt &quot;Roboto&quot;;
+				
+	border-image: url(:/newPrefix/fileanh/background.jpg);
+}
+QPushButton#xoamotcainhatkyvantayButton:hover{
+				color: rgb(255,255,255);
+				background-color: rgb(67, 1, 241);
+				border-image:none;
+}
+QPushButton#xoamotcainhatkyvantayButton:pressed{
+				padding-left: 2px;
+				padding-top: 2px;
+				
+}</string>
+      </property>
+      <property name="text">
+       <string>Xóa cái đã chọn</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_75">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>881</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/newPrefix/fileanh/background1.jpg);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>label_75</zorder>
+     <zorder>label_2</zorder>
+     <zorder>listNhatKyVanTay</zorder>
+     <zorder>xoatatcanhatkyvantayButton</zorder>
+     <zorder>xoamotcainhatkyvantayButton</zorder>
+    </widget>
+    <widget class="QWidget" name="mainSucKhoe">
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>20</y>
+        <width>141</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>nhật ký sức khỏe</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="listNhatKySucKhoe">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>681</width>
+        <height>361</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="xoamotcainhatkysuckhoeButton">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>210</y>
+        <width>161</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#xoamotcainhatkysuckhoeButton{
+				color: rgba(67, 127, 241,1);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;
+				
+				
+	
+	
+	font: 75 14pt &quot;Roboto&quot;;
+				
+	border-image: url(:/newPrefix/fileanh/background.jpg);
+}
+QPushButton#xoamotcainhatkysuckhoeButton:hover{
+				color: rgb(255,255,255);
+				background-color: rgb(67, 1, 241);
+				border-image:none;
+}
+QPushButton#xoamotcainhatkysuckhoeButton:pressed{
+				padding-left: 2px;
+				padding-top: 2px;
+				
+}</string>
+      </property>
+      <property name="text">
+       <string>Xóa cái đã chọn</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="xoatatcanhatkysuckhoeButton">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>40</y>
+        <width>161</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#xoatatcanhatkysuckhoeButton{
+				color: rgba(67, 127, 241,1);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;
+				
+				
+	
+	
+	font: 75 20pt &quot;Roboto&quot;;
+				
+	border-image: url(:/newPrefix/fileanh/background.jpg);
+}
+QPushButton#xoatatcanhatkysuckhoeButton:hover{
+				color: rgb(255,255,255);
+				background-color: rgb(67, 1, 241);
+				border-image:none;
+}
+QPushButton#xoatatcanhatkysuckhoeButton:pressed{
+				padding-left: 2px;
+				padding-top: 2px;
+				
+}</string>
+      </property>
+      <property name="text">
+       <string>Xóa tất cả</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_76">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>881</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/newPrefix/fileanh/background1.jpg);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>label_76</zorder>
+     <zorder>label_11</zorder>
+     <zorder>listNhatKySucKhoe</zorder>
+     <zorder>xoamotcainhatkysuckhoeButton</zorder>
+     <zorder>xoatatcanhatkysuckhoeButton</zorder>
+    </widget>
+    <widget class="QWidget" name="mainSettingVanTay">
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>0</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>21</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Cài đặt vân tay</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="listquanlyVanTay">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>851</width>
+        <height>331</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_77">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>881</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/newPrefix/fileanh/background1.jpg);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>label_77</zorder>
+     <zorder>label_12</zorder>
+     <zorder>listquanlyVanTay</zorder>
+    </widget>
+   </widget>
+   <widget class="QStackedWidget" name="Module">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>409</y>
+      <width>1261</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="currentIndex">
+     <number>3</number>
+    </property>
+    <widget class="QWidget" name="ModuleNumber">
+     <widget class="QPushButton" name="motButton">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>10</y>
+        <width>261</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>30</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="haiButton">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>10</y>
+        <width>261</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>30</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="baButton">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>10</y>
+        <width>261</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>30</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>3</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="backNumberButton">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>10</y>
+        <width>261</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>30</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;=</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="namButton">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>95</y>
+        <width>261</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>30</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>5</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="clearNumberButton">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>95</y>
+        <width>261</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>30</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Clear</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="sauButton">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>95</y>
+        <width>261</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>30</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>6</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="bonButton">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>95</y>
+        <width>261</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>30</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>4</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="bayButton">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>180</y>
+        <width>261</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>30</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>7</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="enterButtonNumber">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>180</y>
+        <width>261</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>30</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Enter</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chinButton">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>180</y>
+        <width>261</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>30</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>9</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="tamButton">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>180</y>
+        <width>261</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>30</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>8</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="nhapTextNumber">
+      <property name="geometry">
+       <rect>
+        <x>1120</x>
+        <y>60</y>
+        <width>121</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>35</pointsize>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string>128</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="backButtonNumber">
+      <property name="geometry">
+       <rect>
+        <x>1120</x>
+        <y>190</y>
+        <width>121</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Quay lại</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>1120</x>
+        <y>15</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Id vân tay &lt; 128</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="ModuleXacNhan">
+     <widget class="QLabel" name="label_28">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>0</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Xác nhận</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_29">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>30</y>
+        <width>61</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Tên :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="xacNhanKeyboard">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>40</y>
+        <width>291</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_31">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>30</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>ID :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="xacNhanNumber">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>40</y>
+        <width>341</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_33">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>90</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Thời gian :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="xacNhanThoiGian">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>90</y>
+        <width>561</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="xacnhanButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>581</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#xacnhanButton{
+				color: rgba(67, 127, 241,1);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;
+				
+				
+	
+	
+	font: 75 20pt &quot;Roboto&quot;;
+				
+	border-image: url(:/newPrefix/fileanh/background.jpg);
+}
+QPushButton#xacnhanButton:hover{
+				color: rgb(255,255,255);
+				background-color: rgb(67, 1, 241);
+				border-image:none;
+}
+QPushButton#xacnhanButton:pressed{
+				padding-left: 2px;
+				padding-top: 2px;
+				
+}</string>
+      </property>
+      <property name="text">
+       <string>Xác nhận</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="backxacnhanButton">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>130</y>
+        <width>561</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#backxacnhanButton{
+				color: rgba(67, 127, 241,1);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;
+				
+				
+	
+	
+	font: 75 20pt &quot;Roboto&quot;;
+				
+	border-image: url(:/newPrefix/fileanh/background.jpg);
+}
+QPushButton#backxacnhanButton:hover{
+				color: rgb(255,255,255);
+				background-color: rgb(67, 1, 241);
+				border-image:none;
+}
+QPushButton#backxacnhanButton:pressed{
+				padding-left: 2px;
+				padding-top: 2px;
+				
+}</string>
+      </property>
+      <property name="text">
+       <string>Quay lại</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="xacnhanthongtin">
+      <property name="geometry">
+       <rect>
+        <x>880</x>
+        <y>40</y>
+        <width>321</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>23</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Xác nhận thông tin</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_40">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1261</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/newPrefix/fileanh/background1.jpg);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>label_40</zorder>
+     <zorder>label_28</zorder>
+     <zorder>label_29</zorder>
+     <zorder>xacNhanKeyboard</zorder>
+     <zorder>label_31</zorder>
+     <zorder>xacNhanNumber</zorder>
+     <zorder>label_33</zorder>
+     <zorder>xacNhanThoiGian</zorder>
+     <zorder>xacnhanButton</zorder>
+     <zorder>backxacnhanButton</zorder>
+     <zorder>xacnhanthongtin</zorder>
+    </widget>
+    <widget class="QWidget" name="Modulenhanvantay">
+     <widget class="QLabel" name="label_32">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>711</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/newPrefix/fileanh/new/1715390cam_bien_nhan_dang_van_tay.png);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="nhanantaynguoidung">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>60</y>
+        <width>521</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>22</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Mời chạm tay vào module</string>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressBar2">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>210</y>
+        <width>481</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>24</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_35">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>165</y>
+        <width>411</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Thời gian chờ còn lại trước khi hủy bỏ</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_59">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1261</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/newPrefix/fileanh/background1.jpg);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>label_59</zorder>
+     <zorder>label_32</zorder>
+     <zorder>nhanantaynguoidung</zorder>
+     <zorder>progressBar2</zorder>
+     <zorder>label_35</zorder>
+    </widget>
+    <widget class="QWidget" name="ModuleCore">
+     <widget class="QStackedWidget" name="stackedWidget_7">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>10</y>
+        <width>311</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="moduleNgoaiViOn">
+       <widget class="QLabel" name="label_61">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>80</y>
+          <width>101</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/newPrefix/fileanh/icons8-rfid-signal-96.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_52">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>170</y>
+          <width>91</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/newPrefix/fileanh/icons8-hearing-80.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_73">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>311</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/newPrefix/fileanh/background1.jpg);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="giatrirungbat">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>90</y>
+          <width>61</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">image: url(:/newPrefix/fileanh/icons8-filled-circle-96.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_83">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Roboto</family>
+          <pointsize>17</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">				color: rgb(67, 127, 241);
+				</string>
+        </property>
+        <property name="text">
+         <string>MODULE NGOẠI VI</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+        <property name="textInteractionFlags">
+         <set>Qt::LinksAccessibleByMouse</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="giatrirungtat">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>90</y>
+          <width>61</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/newPrefix/fileanh/icons8-filled-circleoff-96.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="giatriamthanhtat">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>190</y>
+          <width>61</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/newPrefix/fileanh/icons8-filled-circleoff-96.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="giatriamthanhbat">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>190</y>
+          <width>61</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">image: url(:/newPrefix/fileanh/icons8-filled-circle-96.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="onModuleNgoaiVi">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>10</y>
+          <width>81</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/newPrefix/fileanh/icons8-done-40.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="offModuleNgoaiVi">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>10</y>
+          <width>81</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/newPrefix/fileanh/icons8-close-40.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <zorder>label_73</zorder>
+       <zorder>label_61</zorder>
+       <zorder>label_52</zorder>
+       <zorder>giatrirungbat</zorder>
+       <zorder>label_83</zorder>
+       <zorder>giatrirungtat</zorder>
+       <zorder>giatriamthanhtat</zorder>
+       <zorder>giatriamthanhbat</zorder>
+       <zorder>onModuleNgoaiVi</zorder>
+       <zorder>offModuleNgoaiVi</zorder>
+      </widget>
+      <widget class="QWidget" name="moduleNgoaiViOff">
+       <widget class="QLabel" name="label_46">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>291</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Roboto</family>
+          <pointsize>13</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>CHƯA TÌM THẤY MODULE NGOẠI VI</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_80">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>311</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/newPrefix/fileanh/background1.jpg);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <zorder>label_80</zorder>
+       <zorder>label_46</zorder>
+      </widget>
+     </widget>
+     <widget class="QStackedWidget" name="stackedWidget_8">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>10</y>
+        <width>311</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="moduleNhietDoOn">
+       <widget class="QLabel" name="label_49">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>71</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/newPrefix/fileanh/icons8-temperature-80.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_50">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>170</y>
+          <width>61</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">image: url(:/newPrefix/fileanh/icons8-humidity-80.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="giatritroisang">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>170</y>
+          <width>71</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/newPrefix/fileanh/icons8-full-moon-96.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="giatritroitoi">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>90</y>
+          <width>71</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+border-image: url(:/newPrefix/fileanh/icons8-new-moon-96.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_72">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>311</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/newPrefix/fileanh/background1.jpg);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="giatrinhietdo">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>100</y>
+          <width>121</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Roboto</family>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">				color: rgb(67, 127, 241);
+				</string>
+        </property>
+        <property name="text">
+         <string>60</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="giatridoam">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>170</y>
+          <width>131</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Roboto</family>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">				color: rgb(67, 127, 241);
+				</string>
+        </property>
+        <property name="text">
+         <string>60</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_82">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Roboto</family>
+          <pointsize>17</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">				color: rgb(67, 127, 241);
+				</string>
+        </property>
+        <property name="text">
+         <string>MODULE NHIỆT ĐỘ</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+        <property name="textInteractionFlags">
+         <set>Qt::LinksAccessibleByMouse</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="onModuleNhietDo">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>10</y>
+          <width>81</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/newPrefix/fileanh/icons8-done-40.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="offModuleNhietDo">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>10</y>
+          <width>81</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/newPrefix/fileanh/icons8-close-40.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <zorder>label_72</zorder>
+       <zorder>label_49</zorder>
+       <zorder>label_50</zorder>
+       <zorder>giatritroisang</zorder>
+       <zorder>giatritroitoi</zorder>
+       <zorder>giatrinhietdo</zorder>
+       <zorder>giatridoam</zorder>
+       <zorder>label_82</zorder>
+       <zorder>onModuleNhietDo</zorder>
+       <zorder>offModuleNhietDo</zorder>
+      </widget>
+      <widget class="QWidget" name="moduleNhietDOFF">
+       <widget class="QLabel" name="label_45">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>291</width>
+          <height>201</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Roboto</family>
+          <pointsize>13</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>CHƯA TÌM THẤY MODULE NHIỆT ĐỘ</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_79">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>311</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/newPrefix/fileanh/background1.jpg);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <zorder>label_79</zorder>
+       <zorder>label_45</zorder>
+      </widget>
+     </widget>
+     <widget class="QStackedWidget" name="stackedWidget_9">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>311</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="moduleKhiOn">
+       <widget class="QLabel" name="label_22">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>171</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Roboto</family>
+          <pointsize>21</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">				color: rgb(67, 127, 241);
+				</string>
+        </property>
+        <property name="text">
+         <string>MODULE KHÍ</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+        <property name="textInteractionFlags">
+         <set>Qt::LinksAccessibleByMouse</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="icon1">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>90</y>
+          <width>81</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/newPrefix/fileanh/icons8-pressure-gauge-80.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="icon2">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>170</y>
+          <width>81</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/newPrefix/fileanh/icons8-gas-80.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_71">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>311</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/newPrefix/fileanh/background1.jpg);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="giatrikhi">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>90</y>
+          <width>171</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Roboto</family>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">				color: rgb(67, 127, 241);
+				</string>
+        </property>
+        <property name="text">
+         <string>Trong lành</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="giatrigas">
+        <property name="geometry">
+         <rect>
+          <x>116</x>
+          <y>182</y>
+          <width>141</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Roboto</family>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">				color: rgb(67, 127, 241);
+				</string>
+        </property>
+        <property name="text">
+         <string>60</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="onModuleKhi">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>10</y>
+          <width>81</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/newPrefix/fileanh/icons8-done-40.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="offModuleKhi">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>10</y>
+          <width>81</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/newPrefix/fileanh/icons8-close-40.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <zorder>label_71</zorder>
+       <zorder>label_22</zorder>
+       <zorder>icon1</zorder>
+       <zorder>icon2</zorder>
+       <zorder>giatrikhi</zorder>
+       <zorder>giatrigas</zorder>
+       <zorder>onModuleKhi</zorder>
+       <zorder>offModuleKhi</zorder>
+      </widget>
+      <widget class="QWidget" name="moduleKhOFF">
+       <widget class="QLabel" name="label_44">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>30</y>
+          <width>251</width>
+          <height>191</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Roboto</family>
+          <pointsize>13</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>CHƯA TÌM THẤY MODULE KHÍ</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_78">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>311</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/newPrefix/fileanh/background1.jpg);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <zorder>label_78</zorder>
+       <zorder>label_44</zorder>
+      </widget>
+     </widget>
+     <widget class="QStackedWidget" name="stackedWidget_10">
+      <property name="geometry">
+       <rect>
+        <x>970</x>
+        <y>10</y>
+        <width>281</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="moduleKhacOn">
+       <widget class="QLabel" name="label_41">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>90</y>
+          <width>71</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/newPrefix/fileanh/icons8-heart-monitor-80.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_42">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>180</y>
+          <width>71</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/newPrefix/fileanh/icons8-fraud-80.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_74">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>281</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/newPrefix/fileanh/background1.jpg);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_84">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>171</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Roboto</family>
+          <pointsize>17</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">				color: rgb(67, 127, 241);
+				</string>
+        </property>
+        <property name="text">
+         <string>MODULE KHÁC</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+        <property name="textInteractionFlags">
+         <set>Qt::LinksAccessibleByMouse</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="giatrimodulexamnhaptat">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>190</y>
+          <width>61</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/newPrefix/fileanh/icons8-filled-circleoff-96.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="giatrimodulexamnhapbat">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>190</y>
+          <width>61</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">image: url(:/newPrefix/fileanh/icons8-filled-circle-96.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="giatrimodulesuckhoebat">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>90</y>
+          <width>61</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">image: url(:/newPrefix/fileanh/icons8-filled-circle-96.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="giatrimodulesuckhoetat">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>90</y>
+          <width>61</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/newPrefix/fileanh/icons8-filled-circleoff-96.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="onModuleKhac">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>0</y>
+          <width>81</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/newPrefix/fileanh/icons8-done-40.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="offModuleKhac">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>0</y>
+          <width>81</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/newPrefix/fileanh/icons8-close-40.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="loichuyendong">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>170</y>
+          <width>71</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/newPrefix/fileanh/new/icons8-high-risk-80.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <zorder>label_74</zorder>
+       <zorder>label_41</zorder>
+       <zorder>label_42</zorder>
+       <zorder>label_84</zorder>
+       <zorder>giatrimodulexamnhaptat</zorder>
+       <zorder>giatrimodulexamnhapbat</zorder>
+       <zorder>giatrimodulesuckhoebat</zorder>
+       <zorder>giatrimodulesuckhoetat</zorder>
+       <zorder>onModuleKhac</zorder>
+       <zorder>offModuleKhac</zorder>
+       <zorder>loichuyendong</zorder>
+      </widget>
+      <widget class="QWidget" name="moduleKhacOff">
+       <widget class="QLabel" name="label_81">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>311</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/newPrefix/fileanh/background1.jpg);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_56">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>261</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Roboto</family>
+          <pointsize>13</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>CHƯA TÌM THẤY MODULE KHÁC</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="ModuleSucKhoe">
+     <widget class="QLabel" name="suckhoe">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>-10</y>
+        <width>201</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Module sức khỏe</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="backsuckhoeModule">
+      <property name="geometry">
+       <rect>
+        <x>1130</x>
+        <y>10</y>
+        <width>111</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#backsuckhoeModule{
+				color: rgba(67, 127, 241,1);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;
+				
+				
+	
+	
+	font: 75 20pt &quot;Roboto&quot;;
+				
+	border-image: url(:/newPrefix/fileanh/background.jpg);
+}
+QPushButton#backsuckhoeModule:hover{
+				color: rgb(255,255,255);
+				background-color: rgb(67, 1, 241);
+				border-image:none;
+}
+QPushButton#backsuckhoemodule:pressed{
+				padding-left: 2px;
+				padding-top: 2px;
+				
+}</string>
+      </property>
+      <property name="text">
+       <string>Back</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_37">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>221</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Nhip tim cuối cùng</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>150</y>
+        <width>181</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton{
+				color: rgba(67, 127, 241,1);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;
+				
+				
+	
+	
+	font: 75 20pt &quot;Roboto&quot;;
+				
+	border-image: url(:/newPrefix/fileanh/background.jpg);
+}
+QPushButton#pushButton:hover{
+				color: rgb(255,255,255);
+				background-color: rgb(67, 1, 241);
+				border-image:none;
+}
+QPushButton#pushButton:pressed{
+				padding-left: 2px;
+				padding-top: 2px;
+				
+}</string>
+      </property>
+      <property name="text">
+       <string>Lưu vào nhật ký</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_39">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>10</y>
+        <width>221</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Biểu đồ nhịp tim</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>40</y>
+        <width>811</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="grahp"/>
+     </widget>
+     <widget class="QLabel" name="label_54">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>85</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Thời gian</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="thoigiansuckhoeModule">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>110</y>
+        <width>211</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="nhiptimsuckhoeModule">
+      <property name="geometry">
+       <rect>
+        <x>156</x>
+        <y>40</y>
+        <width>71</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>-4</x>
+        <y>-1</y>
+        <width>1261</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/newPrefix/fileanh/background1.jpg);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>pushButton</zorder>
+     <zorder>label_23</zorder>
+     <zorder>suckhoe</zorder>
+     <zorder>backsuckhoeModule</zorder>
+     <zorder>label_37</zorder>
+     <zorder>label_39</zorder>
+     <zorder>gridLayoutWidget</zorder>
+     <zorder>label_54</zorder>
+     <zorder>thoigiansuckhoeModule</zorder>
+     <zorder>nhiptimsuckhoeModule</zorder>
+    </widget>
+    <widget class="QWidget" name="ModuleKeyboard">
+     <widget class="QPushButton" name="qButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>100</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>33</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Q</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="rButton">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>10</y>
+        <width>100</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>33</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>R</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="eButton">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>10</y>
+        <width>100</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>33</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>E</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="tButton">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>10</y>
+        <width>100</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>33</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>T</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="wButton">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>10</y>
+        <width>100</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>33</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>W</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pButton">
+      <property name="geometry">
+       <rect>
+        <x>1000</x>
+        <y>10</y>
+        <width>100</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>33</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>P</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="oButton">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>10</y>
+        <width>100</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>33</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>O</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="uButton">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>10</y>
+        <width>100</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>33</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>U</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="yButton">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>10</y>
+        <width>100</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>33</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Y</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="iButton">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>10</y>
+        <width>100</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>33</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>I</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="backkeyboardButton">
+      <property name="geometry">
+       <rect>
+        <x>1110</x>
+        <y>10</y>
+        <width>141</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>33</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;=</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="lButton">
+      <property name="geometry">
+       <rect>
+        <x>930</x>
+        <y>100</y>
+        <width>100</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>33</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>L</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="kButton">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>100</y>
+        <width>100</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>33</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>K</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="aButton">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>100</y>
+        <width>100</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>33</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>A</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="gButton">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>100</y>
+        <width>100</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>33</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>G</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="fButton">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>100</y>
+        <width>100</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>33</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>F</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="jButton">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>100</y>
+        <width>100</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>33</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>J</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="hButton">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>100</y>
+        <width>100</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>33</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>H</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="dButton">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>100</y>
+        <width>100</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>33</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>D</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="sButton">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>100</y>
+        <width>100</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>33</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>S</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="enterButtonKeyBoard">
+      <property name="geometry">
+       <rect>
+        <x>1040</x>
+        <y>100</y>
+        <width>141</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>33</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>ENTER</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="mButton">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>185</y>
+        <width>100</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>33</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>M</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="zButton">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>185</y>
+        <width>100</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>33</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Z</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="bButton">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>185</y>
+        <width>100</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>33</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>B</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="xButton">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>185</y>
+        <width>100</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>33</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>X</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="nButton">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>185</y>
+        <width>100</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>33</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>N</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="vButton">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>185</y>
+        <width>100</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>33</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>V</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cButton">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>185</y>
+        <width>100</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>33</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>C</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="nhapText">
+      <property name="geometry">
+       <rect>
+        <x>910</x>
+        <y>190</y>
+        <width>331</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>29</pointsize>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Panel</enum>
+      </property>
+      <property name="text">
+       <string>aaaaaaaaaaaaaaa</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>910</x>
+        <y>246</y>
+        <width>251</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Nhập không quá 15 kí tự</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="deleteButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>190</y>
+        <width>121</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Delete ALL</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QStackedWidget" name="Sound">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>10</y>
+      <width>81</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>0</number>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="trueSound">
+     <widget class="QPushButton" name="trueSoundButton">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>81</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/newPrefix/fileanh/icons8-audio-40.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="falseSound">
+     <widget class="QPushButton" name="falseSoundButton">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>81</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/newPrefix/fileanh/icons8-no-audio-40.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QStackedWidget" name="Cloud">
+    <property name="geometry">
+     <rect>
+      <x>1090</x>
+      <y>10</y>
+      <width>81</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="trueCloud">
+     <widget class="QLabel" name="trueCloudButton">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>81</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/newPrefix/fileanh/icons8-cloud-40.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="falseCloud">
+     <widget class="QLabel" name="falseCloudButton">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/newPrefix/fileanh/icons8-cloud-cross-40.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QStackedWidget" name="Wifi">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>10</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: none;
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="trueWifi">
+     <widget class="QLabel" name="trueWifiButton">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>71</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/newPrefix/fileanh/icons8-wi-fi-40.png);</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="falseWifi">
+     <widget class="QLabel" name="falseWifiButton">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>71</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/newPrefix/fileanh/icons8-khongcowifi-40.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>690</y>
+      <width>1231</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Create by Twopiece Team - Ver 1.0.0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_53">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-20</y>
+      <width>1281</width>
+      <height>751</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/newPrefix/fileanh/background.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="trueCloudButton_2">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>10</y>
+      <width>81</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/newPrefix/fileanh/icons8-signal-96.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label_53</zorder>
+   <zorder>Menu</zorder>
+   <zorder>Main</zorder>
+   <zorder>Module</zorder>
+   <zorder>Sound</zorder>
+   <zorder>Cloud</zorder>
+   <zorder>Wifi</zorder>
+   <zorder>label_10</zorder>
+   <zorder>trueCloudButton_2</zorder>
+  </widget>
+  <action name="actionvcl">
+   <property name="text">
+    <string>vcl</string>
+   </property>
+  </action>
+  <action name="actionvcl2">
+   <property name="text">
+    <string>vcl2</string>
+   </property>
+  </action>
+  <action name="actionvcl3">
+   <property name="text">
+    <string>vcl3</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="source.qrc"/>
+ </resources>
+ <connections/>
+</ui>

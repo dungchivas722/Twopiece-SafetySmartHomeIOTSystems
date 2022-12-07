@@ -1,0 +1,78 @@
+SOME CALENDAR TRUETYPE THOUGHTS....
+
+This file IS NOT required reading or a set of detailed instructions!
+You can feel free to plunge right in making calendars without reading
+on if you like. If you're familiar with your application, you may have 
+already done so!
+
+The Calendar typeface works just like any other TrueType font.
+The big difference is that the characters are the constructive
+parts of a typical calendar. Since it is a little different from
+a standard type font, here are a few hints:
+
+1. After installing the font, print a type showing that mirrors the
+keyboard. That will give you a handy guide to what keystroke sets
+which character. To save some keystrokes, you can use the following
+by cutting and pasting and then formatting using your new Calendar font:
+
+   UPPER CASE KEYSTROKES:
+~!@#$%^&*()_+|
+qwertyuiop{}
+asdfghjkl:"
+zxcvbnm<>?
+   LOWER CASE KEYSTROKES:
+`1234567890-=\
+QWERTYUIOP[]
+ASDFGHJKL;'
+ZXCVBNM,./
+
+You may decide to make an even better guide with whatever software
+you use the Calendar font with.
+
+2. You'll notice, for example, that the lower-case "q" creates a box
+with a "1" in it, for the first day of the month. The "w" makes a box
+for the second day with the kerning being set so that the adjacent
+border lines of the two overprint each other, and so on. There are boxes
+for every normal need. There are days of the week, both long/small and
+and short/large versions which will print just above any boxes appearing
+on the following line. There is a "broken" box which can be used for
+holidays or highlights by setting a second piece of type and placing
+it on top of the desired day (...assuming you are using an application
+that will do this such as PageMaker or CorelDraw).
+
+Additionally, there is a full upper case alphabet and set of numerals to
+create matching month-names, years, or other captions. (If you need lower
+case alphabetic characters, the font used is NewForum, which is available
+in 35HEADS -- see the included "35README.TXT" file for ordering
+instructions.)
+
+3. When you set type, set it "solid." (i.e. set 20-point type on 20-point
+line leading and so on.) This will give the proper interline spacing so that,
+for example, the top borders of later weeks will properly overprint the lower
+borders of previous weeks.
+
+4. The great thing about this calendar font is that you can do it in any size
+you like, if you have a use or need for the size. I've made months as small as
+10-point which creates a box of about 1/8" square per day; good for felt-tip
+marking or pocket calendars. And you can easily change to a new size simply
+by selecting and re-sizing the whole block of type, boxes, days-of-week,
+and all. It's that easy!
+
+5. I haven't tried using this font in a variety of applications. But it's
+worked well in PageMaker and CorelDraw. If I remember correctly, you
+can control the leading adequately to make it work in Word for Windows.
+It will work in Windows Write, except there's no fine control over 
+inter-line spacing, so Write will put white lines between the weeks. 
+
+That's it. It's really quite simple when you see the concept. I've used it
+a lot in just the week since I came up with the idea and created the font.
+I can't believe that no one else has put out a font like this (or have I
+just missed it?).
+
+I'd be happy to hear from you. See the "35README.TXT" file for my e-mail
+and postal addresses.
+
+     Enjoy the font!
+
+     Thomas E. Harvey
+     May 18, 1993
